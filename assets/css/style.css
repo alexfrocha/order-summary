@@ -91,6 +91,11 @@ body {
     justify-content: center;
 }
 
+.card-product-name, .card-product-price {
+    line-height: 1.3rem;
+    text-align: start;
+}
+
 .card-product-name {
     font-weight: 900;
     color: var(--neutral-dark-blue-color);
