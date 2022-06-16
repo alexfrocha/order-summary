@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+/* VARIABLES */
+:root {
+    --primary-pale-blue-color: hsl(225, 100%, 94%);
+    --primary-bright-blue-color: hsl(245, 75%, 52%);
+
+    --neutral-very-pale-blue-color: hsl(225, 100%, 98%);
+    --neutral-desaturated-blue-color: blue: hsl(224, 23%, 55%);
+    --neutral-dark-blue-color: hsl(223, 47%, 23%);
+
+    --fs-paragraph-size: 16px;
+    --common-ff: 'Red Hat Display', sans-serif;
+}
+
+/* SIMPLE RESET */
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-family: var(--common-ff);
+}
+
+
+body {
+    background-color: var(--primary-pale-blue-color);
+}
+
+
+.pattern-bg {
+    width: 100%;
+}
+
+.card {
+    border-radius: 20px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+}
+
+.card-image {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card-title {
+    font-size: 27px;
+    font-weight: 900;
+    color: var(--neutral-desaturated-blue-color);
+}
+
+.card-description {
+    color: var(--neutral-desaturated-blue-color);
+    line-height: 1.5rem;
+    font-weight: 500;
+    margin-top: 1.1rem;
+    margin-bottom: 1.6rem;
+}
+
+.card-product {
+    background: var(--neutral-very-pale-blue-color);
+    border-radius: 5px;
+    margin-bottom: 1.6rem;
+}
+
+.card-container {
+    text-align: center;
+    padding: 2.4rem;
+}
+
+.card-payment-button, .card-cancel-button {
+    border-radius: 10px;
+    font-weight: 900;
+}
+
+.card-product-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .8rem 1.5rem;
+}
+
+.card-product-content-text {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-product-name {
+    font-weight: 900;
+    color: var(--neutral-dark-blue-color);
+}
+
+.card-product-price {
+    color: var(--neutral-desaturated-blue-color);
+}
+
+.card-product-link {
+    color: var(--primary-bright-blue-color);
+}
+
+.card-product-link:hover {
+    text-decoration: none;
+}
+
+.card-product-content {
+    display: flex;
+}
+
+.card-payment-button {
+    display: block;
+    width: 100%;
+    background-color: var(--primary-bright-blue-color);
+    color: white;
+    border: 0;
+    outline: none;
+    padding: .8rem;
+    margin-bottom: 1.4rem;
+    box-shadow: 0px 20px 20px var(--primary-pale-blue-color)
+}
+
+.card-cancel-button {
+    color: var(--neutral-desaturated-blue-color);
+    border: 0;
+    outline: none;
+    text-decoration: none;
+}
+
+.card-cancel-button:hover {
+    transition: .3s;
+    text-decoration: underline;
+}
+
+.card-payment-button:hover {
+    transition: .3s;
+    background-color: var(--neutral-dark-blue-color);
+    cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+    .pattern-bg {
+        height: 50vh;
+    }
+}
